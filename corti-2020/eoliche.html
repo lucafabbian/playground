@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Sfide Eoliche</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+  </head>
+  <body>
+    <section style="max-width: 600px; margin-left: calc((100vw - 600px) / 2); text-align: center; margin-top:40px;">
+      <h1>Sfide Eoliche</h1>
+      <hr>
+      <div style="text-align: left">
+        <p>
+          Vento:
+          <select id="venti">
+            <option value="dia">Vento del Diavolo</option>
+            <option value="mae">Maestrale</option>
+            <option value="chi">Chinook</option>
+            <option value="kos">Koshava</option>
+          </select>
+        </p>
+        <p>
+          Condizioni metereologiche:
+          <select id="meteo">
+            <option value="ser">Sereno</option>
+            <option value="nuv">Nuvoloso</option>
+            <option value="pio">Pioggia</option>
+            <option value="tem">Tempesta</option>
+            <option value="nev">Neve</option>
+            <option value="neb">Nebbia</option>
+          </select>
+        </p>
+        <p>
+          <input type="checkbox" id="buoni" name="buoni" value="">
+          <label for="buoni">Venti "buoni"</label><br>
+        </p>
+        <hr>
+        <p style="margin-top: 30px">
+          <button id="start"> Start </button>
+        </p>
+        <p id="output"></p>
+      </div>
+    </section>
+    <script src="./eoliche.js"></script>
+
+  </body>
+</html>
