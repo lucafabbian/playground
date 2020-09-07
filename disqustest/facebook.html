@@ -7,13 +7,19 @@
   </head>
   <body>
 
+    <button onclick="FB.CustomerChat.showDialog(); ">Vota!</button>
+
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
 
+
+  <div class="fb-comments"  data-numposts="5" data-width="100%" data-order-by="reverse_time"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v6.0&appId=902520256865547"></script>
+  </div>
   <script>
     window.fbAsyncInit = function() {
       FB.init({
-        appId:          902520256865547,
+        appId:            902520256865547,
         xfbml            : true,
         version          : 'v8.0'
       });
@@ -35,7 +41,6 @@ logged_in_greeting="Per votare. scrivi il nome del corto e invia un voto da 1-10
 logged_out_greeting="Per votare. scrivi il nome del corto e invia un voto da 1-10">
   </div>
 
-  <button onclick="FB.CustomerChat.showDialog(); ">Test</button>
   
 </body>
 </html>
