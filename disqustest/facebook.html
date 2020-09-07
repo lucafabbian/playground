@@ -9,6 +9,15 @@
 
     <button onclick="FB.CustomerChat.showDialog(); ">Vota!</button>
 
+      <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="100145008506457"
+logged_in_greeting="Per votare. scrivi il nome del corto e invia un voto da 1-10"
+logged_out_greeting="Per votare. scrivi il nome del corto e invia un voto da 1-10">
+</div>
+
+
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
 
@@ -32,14 +41,6 @@
     js.src = 'https://connect.facebook.net/it_IT/sdk/xfbml.customerchat.js';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
-
-  <!-- Your Chat Plugin code -->
-  <div class="fb-customerchat"
-    attribution=setup_tool
-    page_id="100145008506457"
-logged_in_greeting="Per votare. scrivi il nome del corto e invia un voto da 1-10"
-logged_out_greeting="Per votare. scrivi il nome del corto e invia un voto da 1-10">
-  </div>
 
   
 </body>
