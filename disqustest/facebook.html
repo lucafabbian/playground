@@ -12,7 +12,7 @@
     <button onclick="FB.CustomerChat.showDialog(); ">Vota!</button>
 
       <!-- Your Chat Plugin code -->
-  <div class="fb-customerchat"
+  <div class="fb-customerchat" id="chat"
     greeting_dialog_display=hide
     ref="corto12"
     attribution=setup_tool
@@ -28,9 +28,14 @@
   <div id="fb-root"></div>
 
 
-  <div class="fb-comments"  data-numposts="5" data-width="100%" data-order-by="reverse_time"></div>
+  <div id="comments" class="fb-comments"  data-numposts="5" data-width="100%" data-order-by="reverse_time"></div>
   </div>
   <script>
+    window.fbAsyncInit = function () {
+      FB.XFBML.parse(document.getElementById('chat'));
+      FB.XFBML.parse(document.getElementById('comments'));
+
+    }
     /*
     window.fbAsyncInit = function() {
       FB.init({
