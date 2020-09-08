@@ -34,16 +34,17 @@
 
   <script>
     window.fbAsyncInit = function () {
-      FB.XFBML.parse(document.getElementById('fb-root'));
+      FB.init({
+        appId            : 902520256865547,
+        xfbml            : true,
+        version          : 'v8.0'
+      });
+      //FB.XFBML.parse(document.getElementById('fb-root'));
 
     }
     /*
     window.fbAsyncInit = function() {
-      FB.init({
-        appId:            902520256865547,
-        xfbml            : true,
-        version          : 'v8.0'
-      });
+
     };
 
     (function(d, s, id) {
@@ -54,7 +55,7 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));*/</script>
 
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/it_IT/sdk.js#xfbml=0&version=v8.0&appId=902520256865547"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/it_IT/sdk.js"></script>
 
 
   
