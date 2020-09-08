@@ -8,12 +8,19 @@
    -->
   </head>
   <body>
+    <h2>Corto:</h2>   
+    <p>Qui ci mettiamo il link del corto, e un sacco di altre belle cose!</p>
+    <p>Ovviamente la grafica va rifatta, vanno inserite un sacco di cose</p>
 
-    <button onclick="FB.XFBML.parse(document.getElementById('fb-voti')); FB.CustomerChat.showDialog(); ">Vota!</button>
+    <h2>Per votare:</h2>
+    <ol>
+      <li>leggi il corto e scrivi la tua recensione qui sotto, indicando cosa ti è piaciuto e cosa no</li>
+      <li>invia <a href="javascript:void(0)" onclick="FB.CustomerChat.showDialog();">in chat privata qui il tuo voto</a>, sono ammessi voti da 1 a 10 con mezzo punto (es: 7,5)</li>
+    </ol>
 
 
 
-    
+    <h2>Recensioni:</h2>
 
 
   <!-- Load Facebook SDK for JavaScript -->
@@ -41,6 +48,7 @@
         version          : 'v8.0'
       });
       FB.XFBML.parse(document.getElementById('fb-commenti'));
+      FB.XFBML.parse(document.getElementById('fb-voti'));
 
     }
   </script>
